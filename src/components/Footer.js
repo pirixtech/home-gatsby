@@ -1,5 +1,5 @@
-import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import React from 'react'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 
 const Footer = props => {
   const data = useStaticQuery(graphql`
@@ -19,14 +19,14 @@ const Footer = props => {
         }
       }
     }
-  `);
+  `)
   return (
-    <div className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="footer-inner">
-              <h3 className="footer-title">{data.site.siteMetadata.title}</h3>
+    <div className='footer'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='footer-inner'>
+              <h3 className='footer-title'>{data.site.siteMetadata.title}</h3>
               <ul>
                 {data.allFooterMenuJson.edges.map(({ node }) => (
                   <li key={node.name}>
@@ -39,7 +39,7 @@ const Footer = props => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

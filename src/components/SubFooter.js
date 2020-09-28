@@ -1,6 +1,6 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Social from './Social';
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import Social from './Social'
 
 const SubFooter = props => {
   const data = useStaticQuery(graphql`
@@ -12,18 +12,18 @@ const SubFooter = props => {
         }
       }
     }
-  `);
+  `)
   return (
-    <div className="sub-footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="sub-footer-inner">
+    <div className='sub-footer'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='sub-footer-inner'>
               <Social />
-              <div className="copyright">
-                <span>{data.configJson.footer.copyright_text}</span>
+              <div className='copyright'>
+                {/* <span>{data.configJson.footer.copyright_text}</span> */}
                 {data.configJson.footer.copyright_link && (
-                  <a href={data.configJson.footer.copyright_link}>{data.configJson.footer.copyright_link}</a>
+                  <a href={data.configJson.footer.copyright_link}>{data.configJson.footer.copyright_text}</a>
                 )}
               </div>
             </div>
@@ -31,7 +31,7 @@ const SubFooter = props => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SubFooter;
+export default SubFooter

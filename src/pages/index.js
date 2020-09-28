@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
-import Call from '../components/Call'
 
 const Home = props => {
   const intro = props.data.intro
@@ -27,13 +26,20 @@ const Home = props => {
           <div className='row justify-content-start'>
             <div className='col-12 col-md-7 col-lg-6 order-2 order-md-1'>
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
-              <Call showButton />
             </div>
             {intro.frontmatter.intro_image && (
               <div className='col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative'>
                 <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />
               </div>
             )}
+            {/* <div style='width:100%;height:0px;position:relative;padding-bottom:96.250%;'>
+              <iframe src='https://streamable.com/e/plrdir' frameborder='0' width='100%' height='100%' allowfullscreen style='width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;' />
+            </div> */}
+            {/* <div class='video-overlay'>
+              <video class='video_header' id='headerVideo' autoplay='' muted='' loop=''>
+                <source src='static/videos/globe.mp4' type='video/mp4' />
+              </video>
+            </div> */}
           </div>
         </div>
       </div>

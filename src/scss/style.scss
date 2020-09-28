@@ -1,5 +1,5 @@
 // Colors
-$primary: #8036ca;
+$primary: #FF7F50;
 $secondary: #ffe55f;
 $black: #2f2f41;
 $white: #ffffff;
@@ -19,7 +19,7 @@ $font-family-heading: 'Playfair Display', serif, -apple-system;
 // Footer
 $footer-background-color: $primary;
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-background-color: darken($primary, 5%);
 $sub-footer-text-color: $white;
 
 // Bootstrap

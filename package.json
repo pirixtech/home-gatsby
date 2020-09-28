@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-serif-theme",
+  "name": "Pirix Gateway",
   "version": "1.0.0",
-  "author": "Robert Austin <rob@zerostatic.io>",
-  "license": "MIT",
+  "author": "Michael Hu <mike@pirix.tech>",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
@@ -10,10 +9,14 @@
   },
   "dependencies": {
     "gatsby": "^2.24.51",
+    "gatsby-plugin-ffmpeg": "^0.3.1",
     "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-remark-copy-linked-files": "^2.3.16",
+    "gatsby-remark-embed-video": "^3.0.10",
+    "gatsby-remark-videos": "^0.3.5",
     "gatsby-source-filesystem": "^2.3.26",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-remark": "^2.8.30",

@@ -1,10 +1,13 @@
 ---
 title: 'Home'
-intro_image: "/images/illustrations/pointing.svg"
+intro_image: "/images/illustrations/globe.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
 # Pirix Technologies
 
-We provide first class website design and consulting, cloud native application development services
+We at Pirix Technologies strive to provide first class services, including native cloud application develpoment, website design and consulting, and digital transformation consulting.
+
+<!-- embed the video to show looping globe -->
+<!-- ![](/videos/globe.mp4) -->
