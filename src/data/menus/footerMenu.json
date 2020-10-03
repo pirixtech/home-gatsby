@@ -1,17 +1,17 @@
 [
     {
         "name": "Terms",
-        "url": "",
+        "url": "/terms",
         "weight": 1
     },
     {
         "name": "Privacy",
-        "url": "",
+        "url": "/privacy",
         "weight": 2
     },
     {
         "name": "Blog",
-        "url": "",
+        "url": "/blog/",
         "weight": 3
     },
     {

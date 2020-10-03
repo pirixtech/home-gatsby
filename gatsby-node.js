@@ -1,22 +1,22 @@
-const path = require('path');
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 
 // Generate slug field for all markdown files
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `content` });
+  const { createNodeField } = actions
+  if (node.internal.type === 'MarkdownRemark') {
+    const slug = createFilePath({ node, getNode, basePath: 'content' })
     createNodeField({
       node,
-      name: `slug`,
+      name: 'slug',
       value: slug
-    });
+    })
   }
-};
+}
 
 // Create pages from markdown files
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
@@ -80,32 +80,32 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-        `,
+        `
       ).then(result => {
         result.data.services.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/service.js');
+          const component = path.resolve('src/templates/service.js')
           createPage({
             path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
             component,
             context: {
               id: node.id
             }
-          });
-        });
+          })
+        })
         result.data.team.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/team.js');
+          const component = path.resolve('src/templates/team.js')
           createPage({
             path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
             component,
             context: {
               id: node.id
             }
-          });
-        });
+          })
+        })
         result.data.basic.edges.forEach(({ node }) => {
-          let component = path.resolve('src/templates/basic.js');
+          let component = path.resolve('src/templates/basic.js')
           if (node.frontmatter.template) {
-            component = path.resolve(`src/templates/${node.frontmatter.template}.js`);
+            component = path.resolve(`src/templates/${node.frontmatter.template}.js`)
           }
           createPage({
             path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
@@ -113,10 +113,10 @@ exports.createPages = ({ graphql, actions }) => {
             context: {
               id: node.id
             }
-          });
-        });
-        resolve();
-      }),
-    );
-  });
-};
+          })
+        })
+        resolve()
+      })
+    )
+  })
+}

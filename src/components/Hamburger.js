@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Hamburger extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
       hamburgerActive: false
@@ -15,13 +15,12 @@ class Hamburger extends React.Component {
     this.props.toggleMenu(this.state.hamburgerActive);
   };
 
-  render() {
+  render () {
     return (
       <button
         id="toggle-main-menu-mobile"
-        className={`hamburger hamburger--slider ${
-          this.state.hamburgerActive ? 'is-active' : ''
-        }`}
+        className={`hamburger hamburger--slider ${this.state.hamburgerActive ? 'is-active' : ''
+          }`}
         type="button"
         onClick={this.handleToggle}
       >

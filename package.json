@@ -1,7 +1,7 @@
 {
   "name": "pirix-gateway",
   "version": "1.0.0",
-  "author": "Michael Hu <mike@pirix.tech>",
+  "author": "Michael Hu <michael.hu@pirix.tech>",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",

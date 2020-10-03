@@ -7,7 +7,7 @@ import logoMobile from '../../static/images/logo/logo-mobile.svg';
 import MenuMobile from './MenuMobile';
 
 class Header extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
       menuActive: false
@@ -20,7 +20,7 @@ class Header extends React.Component {
     }));
   };
 
-  render() {
+  render () {
     const config = this.props.data.configJson;
     return (
       <div className="header">

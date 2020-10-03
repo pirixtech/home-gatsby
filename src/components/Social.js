@@ -1,5 +1,5 @@
-import React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import React from 'react'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
 const Social = props => {
   const data = useStaticQuery(graphql`
@@ -14,14 +14,14 @@ const Social = props => {
         }
       }
     }
-  `);
+  `)
   return (
-    <div className="social">
+    <div className='social'>
       {data.allSocialJson.edges.map(({ node }) => (
-        <a key={node.name} href={node.link} target="blank"><img src={node.image} title={node.name} alt={node.name} /></a>
+        <a key={node.name} href={node.link} target='blank'><img src={node.image} title={node.name} alt={node.name} /></a>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Social;
+export default Social
