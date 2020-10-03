@@ -1,5 +1,5 @@
 {
-  "name": "Pirix Gateway",
+  "name": "pirix-gateway",
   "version": "1.0.0",
   "author": "Michael Hu <mike@pirix.tech>",
   "scripts": {
