@@ -2,16 +2,16 @@
     {
         "title": "Free Consultation",
         "description": "New clients recieve an obligation free consultation.",
-        "image": "/images/features/noun_branding_1885335.svg"
+        "image": "/images/features/consulting.svg"
     },
     {
         "title": "Certified Developers",
         "description": "All members of our team are certified developers.",
-        "image": "/images/features/noun_The Process_1885341.svg"
+        "image": "/images/features/certified.svg"
     },
     {
         "title": "Technology Trend",
         "description": "We stay up to date on the latest changes to the technology trend.",
-        "image": "/images/features/noun_3d modeling_1885342.svg"
+        "image": "/images/features/tech_trend.svg"
     }
 ]

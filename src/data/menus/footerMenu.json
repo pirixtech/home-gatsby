@@ -1,17 +1,17 @@
 [
     {
         "name": "Terms",
-        "url": "/terms",
+        "url": "/terms/",
         "weight": 1
     },
     {
         "name": "Privacy",
-        "url": "/privacy",
+        "url": "/privacy/",
         "weight": 2
     },
     {
         "name": "Blog",
-        "url": "/blog/",
+        "url": "https://medium.com/@pirix.tech",
         "weight": 3
     },
     {

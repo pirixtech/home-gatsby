@@ -1,11 +1,11 @@
 ---
 path: '/contact'
 title: 'Contact'
-date: 2018-02-22T17:01:34+07:00
+date: 2020-10-03T17:01:34+07:00
 template: "contact"
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+We open from 7:00am to 7:00pm on normal business days, and 10am to 3pm on Saturday. Close on observed holidays.
 
 | Day       | Opening Hours   |
 | --------- | --------------- |

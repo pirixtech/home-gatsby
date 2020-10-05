@@ -30,7 +30,7 @@ const Footer = props => {
               <ul>
                 {data.allFooterMenuJson.edges.map(({ node }) => (
                   <li key={node.name}>
-                    <Link to={node.url}>{node.name}</Link>
+                    <Link to={node.url} target='_blank'>{node.name}</Link>
                   </li>
                 ))}
               </ul>
