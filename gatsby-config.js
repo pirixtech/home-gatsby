@@ -53,6 +53,13 @@ module.exports = {
         display: 'swap'
       }
     },
+    {
+      resolve: 'gatsby-source-medium',
+      options: {
+        username: '@pirix.tech',
+        limit: 200
+      }
+    },
     // {
     //   resolve: 'gatsby-remark-embed-video',
     //   options: {
