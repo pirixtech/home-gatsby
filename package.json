@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "author": "Michael Hu <michael.hu@pirix.tech>",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "GATSBY_EXPERIMENTAL_ENABLE_ADMIN=true gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build"
   },
   "dependencies": {
-    "gatsby": "^2.24.51",
+    "gatsby": "^2.27.4",
     "gatsby-plugin-ffmpeg": "^0.3.1",
     "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-google-fonts": "^1.0.1",
