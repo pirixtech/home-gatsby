@@ -15,7 +15,7 @@
     "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-remark-copy-linked-files": "^2.7.0",
-    "gatsby-remark-embed-video": "^3.0.10",
+    "gatsby-remark-embed-video": "^3.0.12",
     "gatsby-remark-videos": "^0.3.5",
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-json": "^2.8.0",
